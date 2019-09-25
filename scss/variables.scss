@@ -1,5 +1,5 @@
 // FONTS
-$body-font: ('Roboto', sans-serif);
+$body-font: ('Roboto', sans-serif); //(-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif); // 
 $body-baseline: 0.1445;
 $header-baseline: 0.1445;
 
@@ -60,19 +60,19 @@ $slide-transition-bounce: cubic-bezier(0.45, 1.15, 0.5, 1);
 //ELEMENT ANIMATION
 $horizontal-distance: 50px;
 $vertical-distance: 25px;
-$start-delay: 10; 					//ms
+$start-delay: 10;           //ms
 
 //default
-$default-duration: 800;			//ms
-$default-delay-step: 150; 	//ms
+$default-duration: 800;     //ms
+$default-delay-step: 150;   //ms
 
 //fast
-$fast-duration: 700;				//ms
-$fast-delay-step: 100; 			//ms
+$fast-duration: 700;        //ms
+$fast-delay-step: 100;      //ms
 
 //slow
-$slow-duration: 1000;				//ms
-$slow-delay-step: 200; 			//ms
+$slow-duration: 1000;       //ms
+$slow-delay-step: 200;      //ms
 
 //values
 $blur-size: 10px;

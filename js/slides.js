@@ -1,7 +1,7 @@
 /*
 
    _____ _       _                 _  _____
-  / ___/| (*)   | |               | |/ ___/  v 4.2
+  / ___/| (*)   | |               | |/ ___/  v 4.2.5
  | (___ | |_  __| | ___ ____      | | (___
   \___ \| | |/ _` |/ _ / __/  _   | |\___ \
   ____) | | | (_| |  __\__ \ | |__| |____) |
@@ -38,6 +38,7 @@ window.enableMobileZoom = 0;
 window.hideOnScrollSensitivity = 100;
 window.allowParallaxOnMobile = 1;
 window.hidePopupOnBodyClick = 1;
+window.disableKeyNavigation = 0;
 
 var $html = $('html');
 
@@ -70,7 +71,7 @@ $(document).ready(function() { "use strict";
     //fast
     window.slideSpeed = 700;
     window.cleanupDelay = 1200;
-    window.effectSpeed = 800;
+    window.effectSpeed = 700;
     window.scrollSpeed = 0.35;
     window.effectOffset = 400;
   } else if ($body.hasClass('slow')){
@@ -339,7 +340,12 @@ $(document).ready(function() { "use strict";
 
       setTimeout(function(){
         if (currenSlideIndex !== requested){
-          currenSlide.removeClass('active animate');
+
+          if (window.animationLoop === 0) {
+            currenSlide.removeClass('active');
+          } else {
+            currenSlide.removeClass('active animate');
+          }
         }
 
         //avoid accident scrolls
@@ -352,14 +358,19 @@ $(document).ready(function() { "use strict";
         newSlide.addClass('animate');
       },window.slideSpeed - window.effectOffset);
 
-
       //clear element animation on done
-      $('.done').removeClass('done');
+      if (window.animationLoop != 0) {
+        $('.done').removeClass('done');
+      }
 
-      clearTimeout(window.clearElementAnimation);
-      window.clearElementAnimation = setTimeout(function(){
-        $(".slide.selected [class*='ae-']").addClass('done');
-      }, window.slideSpeed + window.effectSpeed + window.cleanupDelay);
+      $(".slide.selected [class*='ae-']").one('webkitTransitionEnd oTransitionEnd msTransitionEnd transitionend', function(){
+        $(this).addClass("done");
+      });
+
+      // clearTimeout(window.clearElementAnimation);
+      // window.clearElementAnimation = setTimeout(function(){
+      //   $(".slide.selected [class*='ae-']").addClass('done');
+      // }, window.slideSpeed + window.effectSpeed + window.cleanupDelay);
     }
     //end showSlide();
   }
@@ -493,7 +504,7 @@ $(document).ready(function() { "use strict";
   var eventCount = 0,
       eventCountStart;
 
-  $('html,body').on('DOMMouseScroll mousewheel scroll touchmove', function(event){
+  $('html,body').on('DOMMouseScroll mousewheel scroll', function(event){
     var $currentSection = $('.slide.selected .content'),
         scrollsize = Math.ceil(Math.abs(event.deltaY) * event.deltaFactor),
         browserScrollRate = (window.isFirefox) ? 2 : 1,
@@ -516,7 +527,7 @@ $(document).ready(function() { "use strict";
       if (window.smoothScroll && !window.isMobile){
 
         //lock default scroll
-        event.preventDefault();
+        //event.preventDefault();
 
         if (energy > 1500) { energy = 1500; }
         if (energy < -1000) { energy = -1500; }
@@ -571,7 +582,7 @@ $(document).ready(function() { "use strict";
 
           if (window.smoothScroll){
             //lock default scroll
-            event.preventDefault();
+            //event.preventDefault();
 
             //smooth scroll
             if (energy > 1500) { energy = 1500; }
@@ -879,8 +890,6 @@ $(document).ready(function() { "use strict";
 
 
 
-
-
 /***
  *      _____                 _
  *     |  __ \               | |
@@ -1007,7 +1016,7 @@ $(document).ready(function() { "use strict";
         scrollTop = $currentSection.scrollTop(),
         finalScroll = scrollTop + parseInt(delta * scrollDistance);
 
-    if (window.window.disableKeyNavigation || e.target.nodeName.toLowerCase() == 'input' || e.target.nodeName.toLowerCase() == 'textarea') {
+    if (window.disableKeyNavigation || e.target.nodeName.toLowerCase() == 'input' || e.target.nodeName.toLowerCase() == 'textarea') {
       return;
     }
 
@@ -1174,9 +1183,9 @@ $(document).ready(function() { "use strict";
           $(element).find('li.selected').removeClass('selected');
 
           var $selectedSlide = $('.slide.selected'),
-              parentSlide = parseInt($selectedSlide.data('parent-slide-id')),
+              parentSlide = $selectedSlide.data('parent-slide-id'),
               selectedIndex = $selectedSlide.index('.slide:not(.exclude)');
-
+              
           if (selectedIndex !== -1) {
             $(element).find('li').eq(selectedIndex).addClass('selected');
           } else if (parentSlide) {
@@ -1331,7 +1340,7 @@ $(document).ready(function() { "use strict";
             HTML5video = $element.find('video');
 
         if ( iframe.length > 0  ) {
-          var iframeSrc = $(iframe).attr('src'),
+          var iframeSrc = $(iframe).attr('src') ? $(iframe).attr('src') : $(iframe).data('src'),
               symbol = (iframeSrc.indexOf('?') > -1) ? "&" : "?";
 
           $(iframe).attr('src',iframeSrc + symbol + "autoplay=1");
@@ -2162,8 +2171,18 @@ $(document).ready(function() { "use strict";
 window.isMobile = false;
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { window.isMobile = true; }
 
-//Detect Mobile
-if(window.isMobile){$html.addClass('mobile');}else{$html.addClass('desktop');}
+//Check for Touch Events
+if (window.PointerEvent && ('maxTouchPoints' in navigator)) {
+  if (navigator.maxTouchPoints > 0) {
+    window.isMobile = true;
+  }
+} else {
+  if (window.matchMedia && window.matchMedia("(any-pointer:coarse)").matches) {
+    window.isMobile = true;
+  } else if (window.TouchEvent || ('ontouchstart' in window)) {
+    window.isMobile = true;
+  }
+}
 
 //Detect Browser
 window.isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
@@ -2179,6 +2198,20 @@ window.isiPad = navigator.userAgent.match(/iPad/i) !== null;
 window.isWindows = navigator.platform.toUpperCase().indexOf('WIN')!==-1;
 window.isOSX = navigator.platform.toUpperCase().indexOf('MAC')!==-1;
 window.isLinux = navigator.platform.toUpperCase().indexOf('LINUX')!==-1;
+
+//Prepare for CSS Fixes
+if (window.isSafari){$html.addClass('safari');}
+if (window.isFirefox){$html.addClass('firefox');}
+if (window.isChrome){$html.addClass('chrome');}
+if (window.isMSIE){$html.addClass('msie');}
+if (window.isEdge){$html.addClass('edge');}
+if (window.isAndroid){$html.addClass('android');}
+if (window.isWindows){$html.addClass('windows');}
+if (window.isOSX){$html.addClass('osx');}
+if (window.isLinux){$html.addClass('linux');}
+
+//Detect Mobile
+if(window.isMobile){$html.addClass('mobile');}else{$html.addClass('desktop');}
 
 //Prepare for CSS Fixes
 if (window.isSafari){$html.addClass('safari');}
