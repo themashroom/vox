@@ -6,7 +6,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
 	<!-- Page Title -->
-	<title>Vox  — Smart Box System</title>
+	<title>Vox - スマートボックス</title>
 
 	<!-- Compressed Styles -->
 	<link href="css/slides.min.css?425341" rel="stylesheet" type="text/css">
@@ -27,20 +27,23 @@
 	<style type="text/css">
 				.slides,
 			.slides p {
-				font-family: 'GothamPro', sans-serif;
-				font-weight: 200;
-			}
-					.slides h1,
-			.slides h2,
-			.slides h3,
-			.slides h4,
-			.slides h5,
-			.slides h6 {
-				font-family: 'GothamPro', sans-serif;
+				font-family: 'Tazugane Gothic StdN Bold', 'Gotham Pro' sans-serif;
 				font-weight: 400;
+			}
+			.slides h1,
+			.slides h2,
+			.slides h6 {
+				font-family: 'Tazugane Gothic StdN Bold', 'Gotham Pro' sans-serif;
+				font-weight: 600;
 				
 			}
-					.slides .button,
+			.slides h3,
+			.slides h4,
+			.slides h5 {
+				font-family: 'GothamPro', sans-serif;
+				font-weight: 500;
+			}
+			.slides .button,
 			.slides .slides-form {
 				font-family: 'GothamPro', sans-serif;
 				font-weight: 600;
@@ -160,20 +163,21 @@
 <!-- Panel Top #library/panel/panel-top-06.html -->
 <nav class="panel top hideOnScroll ">
   <div class="sections desktop">
-    <div class="left"><a href="#" title="Vox"><img src="assets/svg/logo.svg" width="101"></a></div>
+    <div class="left"><a href="#top" title="Vox"><img src="assets/svg/logo.svg" width="101"></a></div>
     <div class="center">
       <ul class="menu">
-        <li><a href="#">Box System</a></li>
-        <li><a href="#">Locker</a></li>
-        <li><a href="#">Beltlock</a></li>
-        <li><a href="#">Padlock</a></li>
-        <li><a href="#">Container</a></li>
+        <li><a href="#top">ユーザー利用ガイド</a></li>
+        <li><a href="#push">配達プッシュ通知</a></li>
+        <li><a href="#unlock">ボックス解錠認証</a></li>
+        <li><a href="#pickup">解錠･荷物取り出し</a></li>
+        <li><a href="#reopen">再度解錠荷物取り出し</a></li>
+        <li><a href="#menu">アプリメニュー</a></li>
       </ul>
     </div>
     <div class="right"><span class="actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
   </div>
   <div class="sections compact hidden">
-    <div class="left"><a href="#" title="Vox"><img src="assets/svg/logo.svg" width="91"></a></div>
+    <div class="left"><a href="#top" title="Vox"><img src="assets/svg/logo.svg" width="91"></a></div>
     <div class="right"><span class="actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
   </div>
 </nav>
@@ -182,46 +186,39 @@
 <nav class="sidebar" data-sidebar-id="1">
   <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
-    <a href="#" class="logo"><img src="assets/svg/logo_s.svg" width="50"></a>
+    <a href="#top" class="logo"><img src="assets/svg/logo_s.svg" width="50"></a>
     <ul class="mainMenu margin-top-3">
-      <li><a href="#">Box System</a></li>
-      <li><a href="#">Locker</a></li>
-      <li><a href="#">Beltlock</a></li>
-      <li><a href="#">Padlock</a></li>
-      <li><a href="#">Container</a></li>
+        <li><a href="#top">ユーザー利用ガイド</a></li>
+	    <li><a href="#push">配達プッシュ通知</a></li>
+	    <li><a href="#unlock">ボックス解錠認証</a></li>
+	    <li><a href="#pickup">解錠･荷物取り出し</a></li>
+	    <li><a href="#reopen">再度解錠荷物取り出し</a></li>
+	    <li><a href="#menu">アプリメニュー</a></li>
     </ul>
     <ul class="subMenu small opacity-8">
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">Terms & Conditions</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-    <ul class="social opacity-8">
-      <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
-      <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
+      <li><a href="privacy_app.html">プライバシーポリシー</a></li>
     </ul>
   </div>
 </nav>
 
 <!-- 1 -->
-<section data-title="Smart Box System" class="slide whiteSlide">
+<section data-title="ユーザー利用ガイド" class="slide whiteSlide" id="top">
   <div class="content">
     <div class="container">
       <div class="wrap">
-      
         <ul class="grid">
           <li class="col-12-12">
             <div class="fix-8-12">
-	          <h3 class="ae-1">Smooth, Connected, unleashed.</h3>
-              <h1 class="ae-1">Smart Box System</h1>
+	          <h4 class="ae-1 padding-bottom-2">User Guide</h4>
+              <h2 class="ae-1"><b>モニターユーザー利用ガイド</b></h2>
               	<div class="fix-6-12">
-			  		<p class="tiny ae-1">Smart delivery box for secure delivery and shipping when you are not at home.</p>
+			  		<p class="tiny ae-1"><b>スマートフォン制御型宅配ボックス</b></p>
               	</div>
             </div>
           </li>
           <li class="col-12-12">
-            <div class="fix-10-12 ae-2 margin-top-1">
-              <img width="1080" src="assets/img/vox_smartbox.png" class="shiftImage iphone-5" alt="Smart Box System" data-action="zoom"/>
+            <div class="fix-9-12 ae-2 margin-top-4">
+              <img width="1080" src="assets/img/voxq.png" class="shiftImage iphone-7" alt="Smart Box System" data-action="zoom"/>
             </div>
           </li>
         </ul>
@@ -232,28 +229,143 @@
   <div class="background" style="background:linear-gradient(-0deg, #DFEBEF, #FFFFFF);"></div>
 </section>
 
+
 <!-- 2 -->
-<section data-title="Smart Container" class="slide fade-6 kenBurns">
+<section data-title="配達プッシュ通知" class="slide fade-6 kenBurns" id="push">
   <div class="content">
     <div class="container">
       <div class="wrap">
       
-        <ul class="grid">
-          <li class="col-12-12">
-            <div class="fix-8-12">
-	          <h3 class="ae-1">Shippable, Returnable, Scalable.</h3>
-              <h1 class="ae-1">Smart Container</h1>
-              	<div class="fix-5-12">
-			  		<p class="tiny ae-1">Next generation smart delivery unit as a ultimate last-mile logistics platform.</p>
-              	</div>
-            </div>
-          </li>
-          <li class="col-12-12">
-            <div class="fix-10-12 ae-2 margin-top-2">
-              <img width="1080" src="assets/img/vox_container.png" class="shiftImage iphone-6" alt="Smart Container" data-action="zoom"/>
-            </div>
-          </li>
-        </ul>
+        <div class="fix-12-12">
+          <ul class="flex verticalCenter later">
+            <li class="col-5-12 ae-1 cell-29">
+              <img width="280" src="assets/img/device1.png" class="iphone-29" data-action="zoom"/>
+            </li>
+            <li class="col-7-12 left">
+              <h4 class="ae-1 fromLeft padding-bottom-2">Push Notification</h4>
+              <h2 class="ae-1 fromLeft">配達プッシュ通知</h2>
+              <p class="tiny ae-2 light fromLeft padding-bottom-2"><b>宅配荷物配達時にプッシュ通知でお知らせ</b></p>
+              <p class="ae-2 light fromLeft"><span class="opacity-8"><small>初回アプリ起動時に通知を許可していない場合は、プッシュ通知が表示されず荷物の到着が分かりません</small></span></p> 	
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background:linear-gradient(-0deg, #182029, #394C5F);"></div>
+</section>
+
+<!-- 3 -->
+<section data-title="ボックス解錠認証" class="slide whiteSlide" id="unlock">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <div class="fix-12-12">
+          <ul class="flex verticalCenter later reverse">
+            <li class="col-7-12 left">
+              <h4 class="ae-1 fromLeft padding-bottom-2">Unlock Authentication</h4>
+              <h2 class="ae-1 fromLeft">ボックス解錠認証</h2>
+              <p class="tiny ae-2 light fromLeft padding-bottom-2"><b>アプリを開いた状態で近づくと解錠ボタンが青く点滅</b></p>
+              <p class="ae-2 light fromLeft"><span class="opacity-8"><small>スマホを下記のとおりに設定して下さい</small></span></p>
+              <img class="ae-3  fromLeft" src="assets/img/setting.png" width="240">
+              
+            </li>
+            <li class="col-5-12 cell-28 ae-1">
+              <img src="assets/img/device2.png" width="280" class="iphone-28" data-action="zoom"/>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background:linear-gradient(-0deg, #DFEBEF, #FFFFFF);"></div>
+</section>
+
+
+<!-- 4 -->
+<section data-title="解錠･荷物取り出し" class="slide fade-6 kenBurns fromLeft" id="pickup">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+          
+        <div class="fix-12-12">
+          <ul class="flex reverse">
+            <li class="col-6-12 left cell-32">
+              <h4 class="ae-1 fromLeft padding-bottom-2">PICK UP</h4>
+              <h2 class="ae-1 fromLeft">解錠･荷物取り出し</h2>
+              <p class="tiny ae-2 light fromLeft padding-bottom-2"><b>青く点滅しているボタンを押し、取手を引いて扉を開き荷物受け取り</b></p>
+              <p class="ae-2 light fromLeft"><span class="opacity-8"><small>ボタンが光るまで多少時間がかかることがあります (最大10秒程度)</small></span></p> 
+              <p class="ae-2 light fromLeft"><span class="opacity-8"><small>ボタンが光らない場合はアプリ画面の｢更新｣ボタンを一度タップしてください (連続でタップはしないでください)</small></span></p> 
+              <p class="ae-2 light fromLeft"><span class="opacity-8"><small>荷物取り出し後､「受取予定のお荷物はございません」とアプリ画面に表示されたことをご確認ください</small></span></p> 
+            </li>
+            <li class="col-6-12 left ae-1 fromRight">
+              <img class="ipad-32" width="1000" src="assets/img/voxpush.png"/>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background:linear-gradient(-0deg, #182029, #394C5F);"></div>
+</section>
+
+<!-- 5 -->
+<section data-title="再度解錠荷物取り出し" class="slide whiteSlide" id="reopen">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <div class="fix-12-12">
+          <ul class="flex verticalCenter later reverse">
+            <li class="col-7-12 left">
+              <h4 class="ae-1 fromLeft padding-bottom-2">Re-open</h4>
+              <h2 class="ae-1 fromLeft">再度解錠荷物取り出し</h2>
+              <p class="tiny ae-2 light fromLeft padding-bottom-2"><b>荷物を取り出さずに扉を閉めた場合などに､再度解錠認証</b></p>
+              <p class="ae-2 light fromLeft"><span class="opacity-8"><small>メニューよりStatusページを開き「再度解錠取り出し」ボタンをタップすると解錠認証が開始 (受取取り出し操作後2分以内)</small></span></p> 
+              <p class="ae-2 light fromLeft"><span class="opacity-8"><small>「解錠権限がありません」と表示された場合は閉扉後2分経過しているため､事務局までご連絡ください</small></span></p> 
+              <p class="ae-2 light fromLeft"><span class="opacity-8"><small>受取解錠したにもかかわらず､荷物を取り出さずに放置した場合は､次の配達受入れが可能になるため荷物紛失等トラブルの責任は負いかねます</small></span></p>              
+            </li>
+            <li class="col-5-12 cell-28 ae-1">
+              <img src="assets/img/device3.png" width="280" class="iphone-28" data-action="zoom"/>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background:linear-gradient(-0deg, #DFEBEF, #FFFFFF);"></div>
+</section>
+
+<!-- 6 -->
+<section data-title="アプリメニュー" class="slide fade-6 kenBurns" id="menu">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <div class="fix-12-12">
+          <ul class="flex verticalCenter later">
+            <li class="col-5-12 ae-1 cell-29">
+              <img width="280" src="assets/img/device4.png" class="iphone-29" data-action="zoom"/>
+            </li>
+            <li class="col-7-12 left">
+              <h4 class="ae-1 fromLeft padding-bottom-1">App Menu</h4>
+              <p class="tiny ae-2 light fromLeft padding-bottom-6"><small>画面右上のメニューアイコンをタップして表示</small></p>
+              <h5 class="ae-1 fromLeft padding-bottom-1">Delivery</h5>
+              <p class="ae-2 light fromLeft padding-bottom-2"><b>受取解錠認証ページ</b><small><span class="opacity-8 padding-left-4">荷物受取時はこのページを使用</span></small></p>
+              <h5 class="ae-1 fromLeft padding-bottom-1">Status</h5>
+              <p class="ae-2 light fromLeft padding-bottom-2"><b>荷物配達･受取ステータス</b><small><span class="opacity-8 padding-left-4">再度解錠取り出しはここから</span></small></p>
+              <h5 class="ae-1 fromLeft padding-bottom-1">Account</h5>
+              <p class="ae-2 light fromLeft padding-bottom-2"><b>アカウント管理</b><small><span class="opacity-8 padding-left-4">アカウントログアウト操作</span></small></p>
+              <h5 class="ae-1 fromLeft padding-bottom-1">Privacy Policy</h5>
+              <p class="ae-2 light fromLeft padding-bottom-2"><b>プライバリーポリシー</b></p>
+            </li>
+          </ul>
+        </div>
         
       </div>
     </div>
@@ -262,9 +374,17 @@
 </section>
 
 <!-- Panel Bottom #09 -->
-<nav class="panel bottom  ">
+<nav class="panel bottom hideOnScroll  ">
   <div class="sections">
-    <div class="center"><span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span></div>
+	<div class="left padding-bottom-1">
+      <a href="http://www.kyuden.co.jp/press_h180822-1" target="_blank" class="button hollow"><img src="assets/img/mark.png" width="240"/></a>
+    </div>
+	<div class="center"><span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span></div>    <div class="right">
+      <ul class="copy trim">
+        <li class="cropRight"><a href="https://www.kyuden.co.jp" target="_blank" class="trim">© Kyushu Electric Power</a> & <a href="https://mashroo.me" target="_blank" class="trim">Mashroom</a></li>
+      </ul>
+    </div>
+
   </div>
 </nav>
 </body>

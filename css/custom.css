@@ -1,3 +1,5 @@
+/* #### Gotham #### */
+
 @font-face {
   font-family: GothamPro;
   src: url(GothamPro-Light.eot);
@@ -77,3 +79,66 @@
   font-weight: 800;
   font-style: italic
 }
+
+/* #### Tazugane #### */
+s
+@font-face {
+    font-family:"Tazugane Gothic StdN Bold";
+    src:url("Monotype  - Tazugane Gothic StdN Bold.woff2") format("woff2"),url("Monotype  - Tazugane Gothic StdN Bold.woff") format("woff"),url("Monotype  - Tazugane Gothic StdN Bold.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Tazugane Gothic StdN Black";
+    src:url("Monotype  - Tazugane Gothic StdN Black.woff2") format("woff2"),url("Monotype  - Tazugane Gothic StdN Black.woff") format("woff"),url("Monotype  - Tazugane Gothic StdN Black.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Tazugane Gothic StdN Book";
+    src:url("Monotype  - Tazugane Gothic StdN Book.woff2") format("woff2"),url("Monotype  - Tazugane Gothic StdN Book.woff") format("woff"),url("Monotype  - Tazugane Gothic StdN Book.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Tazugane Gothic StdN Heavy";
+    src:url("Monotype  - Tazugane Gothic StdN Heavy.woff2") format("woff2"),url("Monotype  - Tazugane Gothic StdN Heavy.woff") format("woff"),url("Monotype  - Tazugane Gothic StdN Heavy.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Tazugane Gothic StdN Light";
+    src:url("Monotype  - Tazugane Gothic StdN Light.woff2") format("woff2"),url("Monotype  - Tazugane Gothic StdN Light.woff") format("woff"),url("Monotype  - Tazugane Gothic StdN Light.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Tazugane Gothic StdN Medium";
+    src:url("Monotype  - Tazugane Gothic StdN Medium.woff2") format("woff2"),url("Monotype  - Tazugane Gothic StdN Medium.woff") format("woff"),url("Monotype  - Tazugane Gothic StdN Medium.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Tazugane Gothic StdN Thin";
+    src:url("Monotype  - Tazugane Gothic StdN Thin.woff2") format("woff2"),url("Monotype  - Tazugane Gothic StdN Thin.woff") format("woff"),url("Monotype  - Tazugane Gothic StdN Thin.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Tazugane Gothic StdN UltLt";
+    src:url("Monotype  - Tazugane Gothic StdN UltLt.woff2") format("woff2"),url("Monotype  - Tazugane Gothic StdN UltLt.woff") format("woff"),url("Monotype  - Tazugane Gothic StdN UltLt.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Tazugane Gothic StdN XBlack";
+    src:url("Monotype  - Tazugane Gothic StdN XBlack.woff2") format("woff2"),url("Monotype  - Tazugane Gothic StdN XBlack.woff") format("woff"),url("Monotype  - Tazugane Gothic StdN XBlack.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Tazugane Gothic StdN";
+    src:url("Monotype  - Tazugane Gothic StdN.woff2") format("woff2"),url("Monotype  - Tazugane Gothic StdN.woff") format("woff"),url("Monotype  - Tazugane Gothic StdN.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+        
