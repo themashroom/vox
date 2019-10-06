@@ -1060,7 +1060,7 @@ img.rounded {
   visibility: visible;
 }
 .slide.whiteSlide {
-  color: #517691;
+  color: #467694;
   background: #F9FBFC;
 }
 
@@ -1617,7 +1617,7 @@ html.mobile .showForMobileInline {
   opacity: 1;
 }
 .slides.whiteSlide .panel {
-  color: #517691;
+  color: #467694;
 }
 .scroll .panel.hideOnScroll, .mobile .simplifiedMobile .panel.hideOnScroll {
   position: fixed;
@@ -1731,7 +1731,7 @@ html.mobile .showForMobileInline {
   max-width: none;
 }
 .slides.whiteSlide .panel svg {
-  fill: #517691;
+  fill: #467694;
 }
 .panel a:not(.button):hover {
   opacity: 0.75;
@@ -1761,7 +1761,7 @@ html.mobile .showForMobileInline {
   top: 5px;
 }
 .slides.whiteSlide .panel .actionButton svg {
-  fill: #517691;
+  fill: #467694;
 }
 .panel .prevSlide,
 .panel .nextSlide {
@@ -1986,7 +1986,7 @@ html.mobile .showForMobileInline {
   right: 100%;
   top: 1px;
   background: transparent;
-  color: #517691;
+  color: #467694;
   font-size: 14px;
   min-width: 50px;
   border-radius: 6px;
@@ -2156,7 +2156,7 @@ html.mobile .showForMobileInline {
   margin-top: 2px;
 }
 .slides.whiteSlide .navigation li:after {
-  background: #517691;
+  background: #467694;
   box-shadow: 0 0 1px #F9FBFC;
 }
 .slides.whiteSlide .stroke .navigation li:after {
@@ -6727,7 +6727,7 @@ p.remind-43 {
   border-color: transparent !important;
 }
 .slide.whiteSlide .grid-64 .cell-64 {
-  border: 1px solid #517691;
+  border: 1px solid #467694;
 }
 
 .grid.grid-65 > li {
@@ -6905,7 +6905,7 @@ p.remind-43 {
   border-color: transparent !important;
 }
 .slide.whiteSlide .grid-71 .cell-71 {
-  border: 1px solid #517691;
+  border: 1px solid #467694;
 }
 
 .grid-73 {
@@ -6938,7 +6938,7 @@ p.remind-43 {
   border-color: transparent !important;
 }
 .slide.whiteSlide .grid-73 .cell-73 {
-  border: 1px solid #517691;
+  border: 1px solid #467694;
 }
 
 .image-73.shiftImageVertical.shiftImage {
@@ -7162,7 +7162,7 @@ p.remind-43 {
   border-radius: 6px;
 }
 .slide.whiteSlide .box-80 {
-  border-color: #517691;
+  border-color: #467694;
 }
 
 .leftControl-82,
@@ -7445,7 +7445,7 @@ p.remind-43 {
 }
 
 .slide.whiteSlide a.button.text-white {
-  color: #517691 !important;
+  color: #467694 !important;
 }
 .slide.whiteSlide .thumbnail-98 {
   color: #F9FBFC;
