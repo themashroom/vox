@@ -1979,7 +1979,8 @@ html.mobile .showForMobileInline {
   height: 6px;
   border-radius: 4px;
 }
-.navigation li[data-title]:before {
+
+.slides.whiteSlide .navigation li[data-title]:before {
   content: attr(data-title);
   position: absolute;
   right: 100%;
@@ -1994,7 +1995,23 @@ html.mobile .showForMobileInline {
   display: inline-block;
   text-align: center;
   white-space: nowrap;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+.navigation li[data-title]:before {
+  content: attr(data-title);
+  position: absolute;
+  right: 100%;
+  top: 1px;
+  background: transparent;
+  color: #F9FBFC;
+  font-size: 14px;
+  min-width: 50px;
+  border-radius: 6px;
+  padding: 7px 7px;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
   pointer-events: none;
   visibility: hidden;
 }
