@@ -4520,6 +4520,9 @@ html.mobile .showForMobileInline {
     -webkit-transform: none !important;
             transform: none !important;
   }
+   p.tiny {
+	font-size: 20px !important;
+  }
 }
 /* End Effects */
 /* typography */
@@ -4672,9 +4675,7 @@ blockquote.tiny {
   font-weight: 400;
   color: #68ACD6;
 }
- p.tiny {
-	font-size: 20px;
-  }
+
 p.micro,
 .p.micro,
 blockquote.micro {
