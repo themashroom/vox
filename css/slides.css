@@ -4657,7 +4657,11 @@ h5,
 
 h6,
 .h6 {
-  font-size: 14px;
+  font-size: 38px;
+  color: #467694;
+  margin-bottom: 12px;
+  line-height: 1.425;
+  
 }
 
 p,
@@ -4706,6 +4710,16 @@ blockquote.tiny {
   font-weight: 400;
   color: #F9FBFC;
   opacity: .8;
+}
+
+p.tiny3,
+.p.tiny3,
+blockquote.tiny {
+  font-size: 18px;
+  line-height: 1.625;
+  margin-bottom: 12px;
+  font-weight: 400;
+  color: #68ACD6;
 }
 
 p.micro,
