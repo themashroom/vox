@@ -4638,7 +4638,8 @@ h7,
   margin-bottom: 12px;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: #517691;
+  color: #F9FBFC;
+  opacity: .9;
 }
 h3.large,
 .h3.large {
