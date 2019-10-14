@@ -4691,8 +4691,8 @@ blockquote.small {
 p.tiny,
 .p.tiny,
 blockquote.tiny {
-  font-size: 22px;
-  line-height: 1.425;
+  font-size: 20px;
+  line-height: 1.625;
   margin-bottom: 12px;
   font-weight: 400;
   color: #68ACD6;
