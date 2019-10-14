@@ -4631,6 +4631,15 @@ h3,
   text-transform: uppercase;
   color: #68ACD6;
 }
+h7,
+.h7 {
+  font-size: 22px;
+  line-height: 1.285;
+  margin-bottom: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #517691;
+}
 h3.large,
 .h3.large {
   font-size: 32px;
@@ -6423,7 +6432,7 @@ html:not(.page-loaded) .dialog {
 }
 
 .iphone-4.shiftImage {
-  margin: 0 0 -5%;
+  margin: 0 0 4%;
 }
 
 .iphone-5.shiftImage {
