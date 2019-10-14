@@ -4705,6 +4705,7 @@ blockquote.tiny {
   margin-bottom: 12px;
   font-weight: 400;
   color: #F9FBFC;
+  opacity: .8;
 }
 
 p.micro,
@@ -4748,7 +4749,7 @@ small .small {
   .h1.huge,
   h1.big,
   .h1.big {
-    font-size: 38px;
+    font-size: 36px;
     margin-bottom: 20px;
   }
 
