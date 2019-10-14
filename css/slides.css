@@ -4538,11 +4538,11 @@ html.mobile .showForMobileInline {
             transform: none !important;
   }
    p.tiny {
-	font-size: 18px !important;
+	font-size: 16px !important;
 	line-height: 1.62 !important;
   }
    p.tiny2 {
-	font-size: 18px !important;
+	font-size: 16px !important;
 	line-height: 1.62 !important;
   }
 }
@@ -4748,7 +4748,7 @@ small .small {
   .h1.huge,
   h1.big,
   .h1.big {
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 20px;
   }
 
