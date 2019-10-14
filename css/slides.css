@@ -1110,7 +1110,7 @@ img.rounded {
 }
 
 .fade-4 .content {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(16, 24, 31, 0.4);
 }
 
 .fade-5 .content {
@@ -4540,6 +4540,9 @@ html.mobile .showForMobileInline {
    p.tiny {
 	font-size: 18px !important;
   }
+   p.tiny2 {
+	font-size: 18px !important;
+  }
 }
 /* End Effects */
 /* typography */
@@ -4686,11 +4689,20 @@ blockquote.small {
 p.tiny,
 .p.tiny,
 blockquote.tiny {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.425;
   margin-bottom: 12px;
   font-weight: 400;
   color: #68ACD6;
+}
+p.tiny2,
+.p.tiny2,
+blockquote.tiny {
+  font-size: 22px;
+  line-height: 1.425;
+  margin-bottom: 12px;
+  font-weight: 400;
+  color: #F9FBFC;
 }
 
 p.micro,
@@ -6384,6 +6396,10 @@ html:not(.page-loaded) .dialog {
   padding-bottom: 27%;
 }
 
+.iphone-4.shiftImage {
+  margin: 0 0 -5%;
+}
+
 .iphone-5.shiftImage {
   margin: 0 0 -31%;
 }
@@ -7793,7 +7809,15 @@ a.box-99:active, a.box-99:focus {
   margin-bottom: -2px;
   font-size: 14px;
 }
+.tiny2 .small-watch {
+  margin-bottom: -2px;
+  font-size: 14px;
+}
 .tiny .date-small {
+  font-size: 14px;
+  vertical-align: 2px;
+}
+.tiny2 .date-small {
   font-size: 14px;
   vertical-align: 2px;
 }
