@@ -4539,6 +4539,7 @@ html.mobile .showForMobileInline {
   }
    p.tiny {
 	font-size: 18px !important;
+	line-height: 1.62 !important;
   }
    p.tiny2 {
 	font-size: 18px !important;

@@ -23,7 +23,7 @@
 
 <!-- Custom Scripts -->
 <!-- <script src="js/custom.js" type="text/javascript"></script> -->
-
+			    
 <!-- Fonts and Material Icons -->
 	<style type="text/css">
 			.slides,
@@ -62,13 +62,23 @@
 			.premade{
 				vertical-align: top;
 			}
+			@media (max-width: 1023px) {
+				.wide{
+				    width: 60% !important;
+			    }
+			    .slides h4{
+				    font-size: 28px;
+				    margin-top: -20px;
+			    }
+
+			}
 			 @media (min-width: 1024px) {
-		    .slide-8 .image {
-		      margin-left: auto;
-		      margin-right: auto;
-		      margin-bottom: -8%;
-		      z-index: -1
-			  	}
+				 .slide-8 .image {
+			      margin-left: auto;
+			      margin-right: auto;
+			      margin-bottom: -8%;
+			      z-index: -1
+			  	 }
 			  }
 		  .slide-8:not(.animate) .styles-images ul>li .style-imgs {
 		    -webkit-transform: translateX(-50%) translateY(100px);
@@ -143,6 +153,7 @@
 		      -webkit-transform: translateX(-50%) rotate(4deg);
 		      transform: translateX(-50%) rotate(4deg)
 		    }
+
 		}
 		
 		  .slide.background3d {
